@@ -6,7 +6,7 @@
 
     port: 587
 
-    username: lucas.sellis@gmail.com
+    username:
 
     password:
 
@@ -46,9 +46,9 @@ envio:
 
   email:
 
-    remetente: lucas.sellis@gmail.com
+    remetente:
 
-    nomeRemetente: 'LucasSellis'
+    nomeRemetente: ''
 
 server:
 
