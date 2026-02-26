@@ -3,17 +3,20 @@ spring:
     host: smtp.gmail.com
     port: 587
     username: lucas.sellis@gmail.com
-    password: jros kkfo aegb nibw
+    password:
     protocol: smtp
     properties:
-      mail:
-        smtp:
-          auth: true
-          starttls:
-            enable: true
-          connectiontimeout: 5000
-          timeout: 3000
-          writetimeout: 5000
+      mail.smtp:
+        auth: true
+        starttls.enable: true
+        connectiontimeout: 5000
+        timeout: 3000
+        writetimeout: 5000
+  cloud:
+    openfeign:
+      httpclient:
+        hc5:
+          enabled: true
 
 envio:
   email:
@@ -23,4 +26,13 @@ envio:
 server:
   port: 8082
 
+comunicacao:
+  url: ${COMUNICACAO_API_URL:http://localhost:8084}
 
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    tags-sorter: alpha
+    operations-sorter: method
+  api-docs:
+    path: /v3/api-docs
