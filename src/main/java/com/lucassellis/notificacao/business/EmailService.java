@@ -1,9 +1,8 @@
 package com.lucassellis.notificacao.business;
 
 import com.lucassellis.notificacao.business.dto.TarefasDTO;
-import com.lucassellis.notificacao.infrastructure.Exceptions.EmailException;
+import com.lucassellis.notificacao.infrastructure.exceptions.EmailException;
 import jakarta.mail.MessagingException;
-import jakarta.mail.internet.AddressException;
 import jakarta.mail.internet.InternetAddress;
 import jakarta.mail.internet.MimeMessage;
 import lombok.RequiredArgsConstructor;
